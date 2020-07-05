@@ -9,7 +9,11 @@
 
 <body>
     <h1>
-    Welcome
+      Welcome
     </h1>
+    <br>
+    <p>
+        This is my personal website for music and programming
+    </p>
 </body>
 </html>
