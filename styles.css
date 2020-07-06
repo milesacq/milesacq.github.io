@@ -1,4 +1,4 @@
-#lefthalf {
+.lefthalf {
    background: url(bg-1.jpg);
    width: 50%;
    position: absolute;
@@ -6,8 +6,7 @@
    height: 100%;
 }
 
-#righthalf {
-
+.righthalf {
    width: 50%;
    position: absolute;
    right: 0px;
