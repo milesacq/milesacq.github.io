@@ -16,6 +16,26 @@
         <title>
           commit 267
         </title>
+        <script>
+        function search() {
+
+           var name = document.getElementById("searchForm").elements["searchItem"].value;
+           var pattern = name.toLowerCase();
+           var targetId = "";
+
+           var divs = document.getElementsByClassName("div");
+           for (var i = 0; i < divs.length; i++) {
+              var para = divs[i].getElementsByTagName("p");
+              var index = para[0].innerText.toLowerCase().indexOf(pattern);
+              if (index != -1) {
+                 targetId = divs[i].parentNode.id;
+                 document.getElementById(targetId).scrollIntoView();
+                 break;
+              }
+           }  
+        }
+        </script>
+
     </head>
  <!-- style="background-image: url(https://raw.githubusercontent.com/milesacq/milesacq.github.io/master/Screen%20Shot%202020-07-05%20at%2011.51.43%20PM.png); background-repeat: no-repeat;" -->
     <body style="margin: 0; height: 100%; overflow-x: hidden">
@@ -50,7 +70,8 @@
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          <button id="searchForm" class="btn btn-outline-success my-2 my-sm-0" type="submit" onclick="document.getElementById('searchForm').submit(); return false;">Search</button>
+            <input type="text" id="searchItem" class="form-control" placeholder="Suchbegriff">
         </form>
       </div>
     </nav>
