@@ -1,0 +1,32 @@
+a {
+  color: #a2a8b9;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  outline: none;
+  min-width: auto;
+  color: #8c93a8;
+  font-family: monospace;
+  font-size: 1rem
+}
+
+p {
+  color: #8c93a8;
+  font-family: monospace;
+  font-size: 1rem
+}
+
+.wrapper {
+  background-color: "#45364B";
+  min-width: "100vw";
+  min-height: "100vh";
+}
+
+.ui {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
